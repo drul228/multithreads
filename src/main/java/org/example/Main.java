@@ -36,10 +36,8 @@ public class Main {
             });
             threadList.add(thread);
         }
-        for (Thread thread:
-                threadList) {
+        for (Thread thread : threadList) {
             thread.run();
-            thread.join();
         }
 
         long endTs = System.currentTimeMillis(); // end time
